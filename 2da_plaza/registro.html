@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro - Máquina del Tiempo VZLA</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <h2>Cronos VZLA</h2>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="registro.html">Registro</a></li>
+            <li><a href="proyecto.html">Sobre el Proyecto</a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <section class="page-section">
+            <h1>Registro de Explorador</h1>
+            <p>Déjanos tus datos y cuéntanos qué fecha te gustaría ver en el mapa.</p>
+            
+            <form action="#" method="POST" class="form-registro">
+                <div class="grupo">
+                    <label>Nombre:</label>
+                    <input type="text" name="nombre" required placeholder="Tu nombre">
+                </div>
+
+                <div class="grupo">
+                    <label>Apellido:</label>
+                    <input type="text" name="apellido" required placeholder="Tu apellido">
+                </div>
+
+                <div class="grupo">
+                    <label>Género:</label>
+                    <select name="genero">
+                        <option value="m">Masculino</option>
+                        <option value="f">Femenino</option>
+                        <option value="o">Otro</option>
+                    </select>
+                </div>
+
+                <div class="grupo">
+                    <label>Estado de procedencia:</label>
+                    <select name="estado">
+                        <option value="tachira">Táchira</option>
+                        <option value="merida">Mérida</option>
+                        <option value="zulia">Zulia</option>
+                        <option value="caracas">Distrito Capital</option>
+                        </select>
+                </div>
+
+                <div class="grupo">
+                    <label>¿Qué fecha o evento te gustaría ver?</label>
+                    <textarea name="peticion" rows="4" placeholder="Ej: La inauguración del Puente sobre el Lago en 1962..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar Petición</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

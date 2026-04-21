@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="sidebar">
+        <h2>Cronos VZLA</h2>
+        <ul>
+                <li><a href="index.html">Inicio</a></li>
+                 <li><a href="index.html#interactivo">Mapa Interactivo</a></li>
+                 <li><a href="../proyecto_feria/2da_plaza/registro.html">Registro</a></li>
+                <li><a href="../proyecto_feria/2da_plaza/proyecto.html">Sobre el Proyecto</a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        
+        <section id="inicio" class="page-section">
+            <h1>Bienvenidos a la Máquina del Tiempo</h1>
+            <p>Explora la historia de Venezuela a través de las décadas.</p>
+
+        </section>
+
+        <section id="interactivo" class="page-section">
+            <h1>Mapa de Venezuela</h1>
+            <div class="timeline-container">
+                <input type="range" min="1" max="4" step="1" id="decade-slider">
+                <div class="labels">
+                    <span>50s</span><span>70s</span><span>90s</span><span>Actualidad</span>
+                </div>
+            </div>
+            <div id="map-canvas">
+                <p>[ El mapa SVG se cargará aquí ]</p>
+            </div>
+        </section>
+
+        <section id="proyecto" class="page-section">
+            <h1>Detalles del Proyecto</h1>
+            <p>Este sistema fue desarrollado para documentar la evolución del país.</p>
+            <ul>
+                <li><strong>Herramientas:</strong> HTML5, CSS3, JavaScript.</li>
+                <li><strong>Tutor Principal:</strong> Gemini AI.</li>
+            </ul>
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
